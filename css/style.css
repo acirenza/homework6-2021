@@ -1,0 +1,120 @@
+body{
+    font-family: Alegreya Sans SC, serif;
+    background-image: url("../images/concrete_seamless.png");
+    background-color: #f1f1f1;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nav_links a:visited{
+    color: #0000EE
+}
+
+.nav_links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card > header{
+    background-color: #288088;
+    border: 2px solid #45ADAD;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 7px 7px;
+}
+
+#pricing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pricing{
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: stretch;
+    justify-content: center;
+}
+
+
+.card{
+   display: flex;
+   flex-basis: 450px;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-content: stretch;
+   justify-content: space-between;
+   align-items: stretch;
+}
+
+
+.gallery img{
+    border: 10px solid #50C7C7;
+    margin: 10px 10px 10px 10px;
+    width: 300px;
+}
+
+.gallery{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#logo{
+    animation-duration: 5s;
+    animation-name: logo;
+    animation-iteration-count: 1;
+}
+
+@keyframes logo{
+    from {
+        width: 50px; 
+        opacity: 0;
+    }
+    to {width: 425px; 
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 850px){
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* header{
+        position: sticky;
+        top: 0;
+    } */
+    
+    .nav_links {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+    }
+    
+    .pricing{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card > header{
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .card{
+        display: flex;
+        flex-basis: 250px;
+    }
+
+}
