@@ -36,7 +36,7 @@ header{
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    align-items: stretch;
+    align-items: center;
     justify-content: center;
 }
 
@@ -87,7 +87,7 @@ header{
         justify-content: space-between;
         align-items: center;
         position: sticky;
-        top: 10;
+        top: 0;
         left: 0;
     }
 
@@ -138,16 +138,12 @@ header{
     }
 
     nav{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
         width: 100%;
     }
 
     .nav_links{
-        display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
     }
     .gallery{
         display: none;
@@ -158,12 +154,9 @@ header{
     }
 
     .pricing{
-        display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        align-items: stretch;
-        align-content: center;
-        justify-content: baseline;
+        align-items: flex-end;
 
     }
 
@@ -172,5 +165,13 @@ header{
         flex-basis: 250px;
     }
 
+   .card > ul > li:nth-child(odd)::before{
+       content: "\01F44D";
+
+   }
+
+   .card > ul > li:nth-child(2)::after{
+       content: "\01F44D";
+   }
 
 }
